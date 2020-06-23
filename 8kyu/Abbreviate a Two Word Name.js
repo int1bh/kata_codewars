@@ -15,11 +15,9 @@ Patrick Feeney => P.F
 function abbrevName(name){
 
     let arrName = name.split(" ");
-    let newArr = arrName.map(function(i){
-        return i.slice(0,1);
-    });
+    let newArr = arrName.map(i => {return i.slice(0,1);});
     return newArr.join('.').toUpperCase();
 
 }
 
-console.log(abbrevName("дрягин Александр"));
+console.log(abbrevName("Pубка гоп"));
